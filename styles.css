@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.flower {
+    position: relative;
+}
+
+/* Stem */
+.stem {
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background-color: green;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Leaves */
+.leaf {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50% / 100%;
+}
+
+.leaf.left {
+    bottom: 50px;
+    left: -30px;
+    transform: rotate(-45deg);
+}
+
+.leaf.right {
+    bottom: 50px;
+    right: -30px;
+    transform: rotate(45deg);
+}
+
+/* Petals */
+.petal {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.petal1 {
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.petal2 {
+    top: 0;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.petal3 {
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.petal4 {
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Flower Center */
+.center {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
